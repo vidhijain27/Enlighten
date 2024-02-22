@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+
+    landing content........................................done
+    timer
+    custom minutes ..> console.log.........................done
+    quatro musics
+    study music
+    sleep music
+    relax music
+    bell tune
+    meditative guide time/diet/pray
+    about/contact
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENLIGHTEN-Student Meditation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f3103b13c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timerstyle.css">
+</head>
+
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <img src="logo.png" id="lgimg">
+            <div class="nav-title">
+                ENLIGHTEN
+            </div>
+        </div>
+        
+
+        <div class="nav-links">
+            <!-- <a href="meditate.html" target="_self">labRatSite</a> -->
+            <a href="landingpage.html" target="_self">HOME</a>
+        </div>
+    </div>
+    
+    <section> 
+        <div class="container">
+
+            <div class="painel sleepPanel">
+                <p id="work">RELAX</p>
+                <!-- <p id="break">BREAK</p> -->
+            </div>
+
+            <div class="group">
+                <input placeholder="Duration" type="text" class="input" id="mins">
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                <button id="reset" onclick="window.location.reload(true)"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            </div>
+            <audio src="audio_files/sleep_audio.m4a" id="studyAud" loop></audio>
+
+        </div>
+    </section>
+    <script src="sleepScript.js"></script>
+
+</body>
+
+</html>
